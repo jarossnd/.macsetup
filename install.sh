@@ -44,6 +44,9 @@ chmod 755 "$(brew --prefix)/share/zsh/site-functions"
 brew tap homebrew/bundle
 brew bundle || true
 
+# Starship
+curl -sS https://starship.rs/install.sh | sh
+
 # Change new hostname here if necessary
 COMPUTER_NAME="jason-mac"
 
