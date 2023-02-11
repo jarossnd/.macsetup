@@ -47,6 +47,10 @@ brew bundle || true
 # Starship
 curl -sS https://starship.rs/install.sh | sh
 
+# vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # Change new hostname here if necessary
 COMPUTER_NAME="jason-mac"
 
